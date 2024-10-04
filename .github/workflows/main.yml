@@ -24,7 +24,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
-          context: ../ecommerce-CiroDerito
-          file: ../ecommerce-CiroDerito/Dockerfile
+          context: ./ecommerce-CiroDerito
+          file: ./ecommerce-CiroDerito/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/ecommerce:latest
